@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simple POC to Print single or multiple files programmatically in browser via Print.js and PDF.js"
+    />
+    <title>Print.js and PDF.js POC</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://printjs-4de6.kxcdn.com/print.min.css"
+    />
+    <style>
+      button {
+        cursor: pointer;
+        border: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        padding: 16px 32px;
+        background-color: white;
+        color: black;
+        border: 2px solid #4caf50;
+      }
+
+      button:hover {
+        background-color: #4caf50;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.js"></script>
+    <h1>Print.js and PDF.js - POC</h1>
+    <br />
+    <p>Click on following to see how printing works for different cases:</p>
+    <br />
+    <ul>
+      <li>
+        <button id="single-pdf-base64">Print single base64 PDF file</button>
+      </li>
+      <br />
+      <li><button id="multiple-image">Print Multiple Images</button></li>
+      <br />
+      <li><button id="single-html">Print HTML Content</button></li>
+      <br />
+      <li>
+        <button id="multiple-pdf">Print multiple PDFs</button>
+      </li>
+    </ul>
+    <script src="./index.js" type="text/javascript"></script>
+  </body>
+</html>
